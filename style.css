@@ -5,11 +5,24 @@
 }
 
 .menu a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #eee;
+    color: blue;
     text-decoration: none;
     border: 1px solid #ccc;
-    padding: 4px 8px;
-    background: #eee;
-    color: purple;
+}
+
+/* hover */
+.menu a:hover {
+    background-color: purple;
+    color: white;
+}
+
+/* click */
+.menu a:active {
+    background-color: red;
+    color: white;
 }
 
 /* ===== HEADER ===== */
@@ -21,13 +34,18 @@ header {
     text-align: center;
 }
 
-/* ===== HEADINGS COLOR (FIX) ===== */
+/* ===== HEADINGS ===== */
 h2, h3 {
     color: teal;
 }
 
 h4 {
     color: red;
+}
+
+/* ===== FIX hover from lab04 ===== */
+aside:hover {
+    display: block;
 }
 
 /* ===== ASIDE ===== */
@@ -38,6 +56,8 @@ aside {
     padding: 1em;
     width: 30%;
     float: right;
+    background-image: url("fade.jpg");
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 /* ===== LAYOUT ===== */
@@ -51,14 +71,14 @@ aside {
 
 #images {
     float: right;
-    clear: right;   /* 🔥 table er niche */
+    clear: right;
 }
 
 #hyperlinks {
     clear: both;
 }
 
-/* ===== TABLE (DOUBLE BORDER, NO GRAY) ===== */
+/* ===== TABLE ===== */
 table {
     margin: auto;
     border-collapse: separate;
@@ -88,14 +108,28 @@ footer {
     margin-top: 1em;
 }
 
+/* Footer layout using pseudo-selectors */
 footer p {
     display: inline-block;
     width: 33%;
 }
 
+footer p:first-child {
+    float: left;
+}
+
+footer p:nth-child(2) {
+    text-align: center;
+}
+
+footer p:last-child {
+    float: right;
+    text-align: right;
+}
+
 /* ===== TWO COLUMN ===== */
 #lists, #images, #tables, #hyperlinks {
-    width: 50%;
+    width: 45%;
     text-align: center;
 }
 
@@ -107,25 +141,4 @@ ol, ul, dl {
 /* ===== RESPONSIVE ===== */
 article {
     min-width: 30em;
-}
-/* ===== MENU LINK STYLE ===== */
-/* ===== MENU STYLE ===== */
-.menu a {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #eee;
-    color: blue;
-    text-decoration: none;
-}
-
-/* hover */
-.menu a:hover {
-    background-color: purple;
-    color: white;
-}
-
-/* click (momentary) */
-.menu a:active {
-    background-color: red;
-    color: white;
 }
