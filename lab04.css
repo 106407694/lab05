@@ -1,0 +1,58 @@
+h1 {
+    color: blueviolet;
+}
+
+/* Navigation links (UPDATED with corrections) */
+nav a {
+    border: 4px solid #ccc;          /* updated border */
+    color: black;
+    padding: 0.2em 0.6em;            /* updated padding */
+    text-decoration: none;
+    margin-right: 5px;
+    background-color: #f0f0f0;       /* added default fill */
+}
+
+/* Hover fill color */
+nav a:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+}
+
+a {
+    color: black;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+#para1 {
+    font-style: italic;
+}
+
+h2 {
+    color: teal;
+}
+
+#Headings {
+    color: red;
+}
+
+.special {
+    color: orange;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-style: double;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+* {
+    margin: 10pt;
+}
+
+#images {
+    text-align: center;
+}
